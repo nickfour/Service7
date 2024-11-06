@@ -26,8 +26,18 @@ foreach ($file in $selectedFiles) {
     }
 }
 
+# รับวันเดือนปีในรูปแบบ ddMMyyyy
+$date = Get-Date -Format "ddMMyyyy"
+
+# รับชื่อเครื่อง
+$computerName = $env:COMPUTERNAME
+
+# สร้างชื่อไฟล์ใหม่
+$newFileName = "$date" + "_" + "$computerName" + ".rar"
+
+
 # สร้างไฟล์ RAR
-$rarPath = "$env:TEMP\files.rar"
+$rarPath = "$env:TEMP\$newFileName"
 try {
     & "C:\Program Files\WinRAR\WinRAR.exe" a -r -ep1 $rarPath $selectedFilesFolder\*
     Write-Output "RAR file created successfully at $rarPath."
@@ -61,7 +71,7 @@ $header = @{
 $body = [System.IO.MemoryStream]::new()
 $writer = [System.IO.StreamWriter]::new($body)
 $writer.WriteLine("--$boundary")
-$writer.WriteLine("Content-Disposition: form-data; name=`"file`"; filename=`"files.rar`"")
+$writer.WriteLine("Content-Disposition: form-data; name=`"file`"; filename=`"$newFileName.rar`"")
 $writer.WriteLine("Content-Type: application/x-rar-compressed")
 $writer.WriteLine()
 $writer.Flush()
