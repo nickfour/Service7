@@ -22,7 +22,7 @@ Disclaimer:
 Zipher HID is a tool designed for educational and professional purposes only. We do not condone or take responsibility for any misuse or illegal activities conducted with this device. 
 Users are solely responsible for their actions and must ensure compliance with applicable laws and regulations.
 
-Contact 
+More:
 Visit for more: https://linktr.ee/zipherqr 
 Discord: https://discord.gg/x9HGCbFEeq
 GitHub: https://github.com/ZipherCyprex
