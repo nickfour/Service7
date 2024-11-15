@@ -37,7 +37,7 @@ cls
 Get-Content $destinationPath
 
 
-Start-Sleep -Seconds 4
+Start-Sleep -Seconds 0.5
 
 $Host.UI.RawUI.ForegroundColor = "Green"
 
