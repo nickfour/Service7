@@ -35,3 +35,16 @@ cls
 
 # แสดงเนื้อหาของไฟล์ที่ดาวน์โหลด
 Get-Content $destinationPath
+
+
+Start-Sleep -Seconds 4
+
+$Host.UI.RawUI.ForegroundColor = "Green"
+
+# ดาวน์โหลดไฟล์จาก URL และบันทึกไปที่ temp/t.txt
+Invoke-WebRequest -Uri "https://github.com/nickfour/Service7/raw/main/zpcypx.txt" -OutFile $destinationPath
+
+cls
+
+# แสดงเนื้อหาของไฟล์ที่ดาวน์โหลด
+Get-Content $destinationPath
