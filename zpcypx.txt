@@ -18,17 +18,7 @@
 ..\/_____/   \/_/   \/_/      \/_/\/_/   \/_____/    \/_/ /_/      \/_____/    \/____/   \/_/     \/_/ /_/   \/_____/   \/_/\/_/
 
 
-Visit for more: https://linktr.ee/zipherqr  ----------------------------------------------------------------------------------------
+Visit for more: https://linktr.ee/zipherqr 
 Discord: https://discord.gg/x9HGCbFEeq
 GitHub: https://github.com/ZipherCyprex
 
-Demo:  Payload  
-1. Plug in Zipher HID  
-2. Deploy HID Injection to open PowerShell  
-3. Execute commands seamlessly  
-
-Features:  
-- HID Injection & HID Keyboard Support  
-- Wi-Fi Control Interface  
-- Custom Payload Compatibility  
-- Compact and Portable  
