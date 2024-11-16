@@ -36,4 +36,4 @@ Remove-Item "$env:TEMP\Wi-Fi-PASS*.txt" -Force -ErrorAction SilentlyContinue
 Remove-Item Wi*.xml -Force -ErrorAction SilentlyContinue
 
 # ออกจากสคริปต์
-# exit
+exit
