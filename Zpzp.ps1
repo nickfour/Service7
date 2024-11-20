@@ -22,7 +22,7 @@ Get-Content $destinationPath
 
 Start-Sleep -Seconds 5  # หน่วงเวลานาน 5 วินาที
 
-tree /A /F
+tree /A | Where-Object { $_ -notmatch '\.' }
 
 Start-Sleep -Seconds 2
 
