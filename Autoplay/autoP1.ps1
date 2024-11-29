@@ -24,3 +24,4 @@ Set-Content -Path $rickyouFileName -Value $rickyouVbs
 
 Start-Process -FilePath "wscript" -ArgumentList $rickyouFileName
 
+exit

@@ -33,3 +33,6 @@ Set-Content -Path $volupFileName -Value $volupVbs
 
 Start-Process -FilePath "wscript" -ArgumentList $rickyouFileName
 Start-Process -FilePath "wscript" -ArgumentList $volupFileName
+
+
+exit
