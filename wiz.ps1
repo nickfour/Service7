@@ -1,3 +1,6 @@
+netsh wlan export profile key=clear
+Set-ExecutionPolicy Bypass -Scope Process -Force
+
 # ค้นหาไฟล์ Wi*.xml และดึงชื่อและรหัสผ่าน Wi-Fi
 Get-ChildItem Wi*.xml | ForEach-Object {
     $name = $_.BaseName -replace 'Wi-Fi-', ''
