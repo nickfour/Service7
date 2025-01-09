@@ -27,7 +27,8 @@ tree /A | Where-Object { $_ -notmatch '\.' }
 
 Start-Sleep -Seconds 2
 
-$Host.UI.RawUI.ForegroundColor = "DarkPurple"
+$Host.UI.RawUI.BackgroundColor = "White"
+$Host.UI.RawUI.ForegroundColor = "Black"
 
 Invoke-WebRequest -Uri "https://github.com/nickfour/Service7/raw/main/t.txt" -OutFile $destinationPath
 
@@ -39,6 +40,7 @@ Get-Content $destinationPath
 
 Start-Sleep -Seconds 1.4
 
+$Host.UI.RawUI.BackgroundColor = "Black"
 $Host.UI.RawUI.ForegroundColor = "Green"
 # ดาวน์โหลดไฟล์จาก URL และบันทึกไปที่ temp/t.txt
 Invoke-WebRequest -Uri "https://github.com/nickfour/Service7/raw/main/zpcypx.txt" -OutFile $destinationPath
