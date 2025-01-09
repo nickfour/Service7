@@ -10,6 +10,9 @@ $destinationPath = "$env:TEMP\$randomFileName"
 
 $Host.UI.RawUI.ForegroundColor = "Green"
 
+
+
+
 Invoke-WebRequest -Uri "https://github.com/nickfour/Service7/raw/main/zpcypx.txt" -OutFile $destinationPath
 
 cls
@@ -18,19 +21,23 @@ Get-Content $destinationPath
 
 Start-Sleep -Seconds 5  # หน่วงเวลานาน 5 วินาที
 
+
+
 tree /A | Where-Object { $_ -notmatch '\.' }
 
 Start-Sleep -Seconds 2
 
-$Host.UI.RawUI.ForegroundColor = "DarkRed"
+$Host.UI.RawUI.ForegroundColor = "DarkPurple"
 
-Invoke-WebRequest -Uri "https://github.com/nickfour/Service7/raw/main/zpcypx.txt" -OutFile $destinationPath
+Invoke-WebRequest -Uri "https://github.com/nickfour/Service7/raw/main/t.txt" -OutFile $destinationPath
 
 cls
 
+
+
 Get-Content $destinationPath
 
-Start-Sleep -Seconds 0.5
+Start-Sleep -Seconds 1.4
 
 $Host.UI.RawUI.ForegroundColor = "Green"
 # ดาวน์โหลดไฟล์จาก URL และบันทึกไปที่ temp/t.txt
